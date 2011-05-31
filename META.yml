@@ -20,6 +20,7 @@ no_index:
     - xt
 requires:
   JSON: 0
+  LWP::Protocol::https: 0
   LWP::UserAgent: 0
   Moo: 0
   Ouch: 0
@@ -28,4 +29,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/beppu/webservice-mtgox.git
-version: 0.03
+version: 0.04
