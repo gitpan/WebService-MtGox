@@ -5,7 +5,7 @@ use Ouch;
 use JSON;
 use LWP::UserAgent;
 
-our $VERSION  = '0.04';
+our $VERSION  = '0.05';
 our $BASE_URL = 'https://mtgox.com/code';
 
 has user     => (is => 'ro');
@@ -146,6 +146,11 @@ Make it AnyEvent+Coro-friendly
   use WebService::MtGox;
   use LWP::Protocol::Coro::http;
 
+Finally, use the command line client, mg
+
+  mg help
+  mg ticker
+
 =head1 DESCRIPTION
 
 WebService::MtGox gives you access to MtGox's bitcoin trading API.
@@ -226,6 +231,12 @@ L<Finance::Bitcoin>,
 L<Finance::MtGox>
 
 (Had I known about Finance::MtGox, I wouldn't have made this module.)
+
+=head2 Command Line Client
+
+Buy and sell bitcoins on mtgox.com from the command line.
+
+L<mg>
 
 =head1 AUTHOR
 
